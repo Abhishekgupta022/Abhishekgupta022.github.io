@@ -1,0 +1,121 @@
+body {
+    padding: 4px;
+    margin: -24px;
+    font-size: 20px;
+}
+
+header {
+    padding: 12px 42px;
+    background-color: rgb(153, 198, 245);
+    /* Use local background image if available,
+       otherwise use original image source. */
+    /* background-image: url("../images/flywheel.jpg"); */
+    background-image: url(" http://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg");
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+a:hover{
+	background-color: rgb(114, 237, 95);
+	opacity: 0.8;
+	color: rgba(5, 5, 133, 0.858);
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+nav a {
+    display: inline-block;
+    width: 17%;
+    padding: 20px 0px;
+    border-radius: 4px;
+    margin: 2px 3% 42px 3%;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgb(0,0,0);
+    text-align: center;
+    text-decoration: none;
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+}
+
+.left {
+    float: left;
+    width: 20%;
+    padding: 0 0 120px 0;
+    background-color: rgb(119, 118, 19);
+}
+img:hover{
+	background-color: rgb(141, 204, 233);
+	border-radius: 3px;
+}
+
+.left img {
+    display: block;
+    width: 75%;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 40px auto;
+}
+
+.right {
+	
+    float: right;
+    background: -o-linear-gradient(to left, #079dc7, #9e6dcc 30%);
+    background: linear-gradient(to left, #079dc7, #9e6dcc 30%);
+    width: 78%;
+}
+table{
+	box-sizing: border-box;
+	border: 3px solid rgb(200, 11, 74);
+	margin:0%;
+	padding:2.5%;
+	
+	background-color: rgb(242, 248, 248);
+	width: 81%;
+	height:73vh;
+	
+
+	
+
+}
+th:hover{
+	background-color: rgba(6, 245, 34, 0.942);
+	opacity: 0.9;
+	font-weight: 750;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+td:hover{
+	background-color: rgba(37, 214, 99, 0.69);
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	overflow: auto;
+}
+td{border-right: 3px solid rgb(241, 238, 238);
+border-left:3px solid rgb(244, 238, 238);
+border-bottom:3px solid rgb(255, 255, 255);
+border-top:3px solid rgb(255,255,255);
+border-spacing:0%;
+background-color: rgb(239, 155, 228);
+margin-left:none;
+opacity: 1.0;}
+
+th{
+	color:rgb(4, 31, 56);
+	background-color: rgb(161, 165, 35);
+	border-top: 3px solid rgba(255, 0, 0, 0.659);
+	border-right: 3px solid rgba(255, 0, 0, 0.86);
+border-left:3px solid rgb(255, 0, 0);
+opacity: 1.0;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend >Personal Detail</legend>
+            <label>Name: <input type='text' id = 'name' name = 'name' pattern ="[A-Z][a-z]" required></label><br>
+            <label>Email: <input type="email" id="email" name="email" pattern="[@][.]" required></label><br>
+            <label>Mobile: <input type="text" id="number" name="number" pattern ="[0-9]{10}" required> </label><br>
+            <label>DOB:<input type="date" id="date" name="date" required></label><br>
+            <span >Gender: 
+                <label><input type="radio" id="Male" name="gender" >Male</label>
+                <label> <input type="radio" id="Female" name="gender" >Female</label></span><br>
+            <span>Contact Via:
+                <label><input type="checkbox" id="contact1" name="contact">Mobile</label>
+                <label><input type="checkbox" id="contact2" name="contact">EmailId</label></span><br>
+
+          <input type="button" value="Click Here">  
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

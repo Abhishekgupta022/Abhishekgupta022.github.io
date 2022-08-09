@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Styled Navigation</title>
+	<link rel="stylesheet" href="css/navigation3.css">
+</head>
+<style>
+    /*http://css-snippets.com/drop-down-navigation */
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(237, 189, 189);
+}
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+    width: 20%;
+    border-right: 3px solid yellow;
+    height: 50px;
+    line-height: 50px;
+    font-size: 140%;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+nav li:last-child{
+	    border-right: none;
+}
+
+nav li li{
+	    border-right: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  transition: .5s background-color;
+}
+
+nav a:hover {
+  background-color: #005f5f;
+  width:auto;
+}
+
+nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor:default;
+}
+
+/* Sub Menus */
+nav li li {
+  font-size: .8em;
+}
+
+nav > ul > li {
+   text-align: center;
+}
+
+nav > ul > li > a {
+    padding-left: 0;
+}
+
+/* Sub Menus */
+nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+}
+
+nav li:hover ul {
+   display: block;
+}
+
+nav li ul li {
+   display: block;
+ }
+
+</style>
+<body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pictures</a>
+          <ul>
+            <li><a href="#">2015</a></li>
+            <li><a href="#">2014</a></li>
+            <li><a href="#">2013</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="active">Recipes</a>
+          <ul>
+            <li><a href="#">Appetizers</a></li>
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Desserts</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  <section>
+		<h2>Playing with Vertical Navigation Bars</h2>
+		<p>This is a separate section that will hold the content for each page.  The next paragraph is just filler text. It doesn't mean anything.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, temporibus, culpa! Impedit amet voluptates reiciendis esse quisquam. Eum quia, facere laboriosam quos possimus, ratione, optio incidunt sunt dolorum commodi magni.</p>
+	</section>
+</body>
+</html>
